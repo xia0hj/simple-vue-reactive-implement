@@ -73,6 +73,7 @@ function defineReactive(obj, key) {
           childOb.dep.addSub()
         }
       }
+      // 注意 getter 返回值必须是闭包中的变量，不能直接返回 obj.key，否则会导致无限递归触发 getter
       return val
     },
     set(newVal) {

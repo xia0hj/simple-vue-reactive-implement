@@ -1,6 +1,6 @@
 //@ts-check
 
-import observe from './src/observer.js'
+import observe from './src/observe.js'
 import Watcher from './src/watcher.js'
 
 const obj = {
